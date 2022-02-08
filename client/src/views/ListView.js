@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ListDisplay from '../components/ListDisplay';
+import ListForm from '../components/ListForm';
 
 
 const ListView = (props) => {
-
+    const [todoList, setTodoList] = useState([])
 
     return(
         <div>
-            <h1>List View</h1>
+            <ListForm todoList={todoList} setTodoList={setTodoList}/>
+            <ListDisplay todoList={todoList} setTodoList={setTodoList} />
         </div>
     )
 }
