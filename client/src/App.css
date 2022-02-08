@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+  
+  color: antiquewhite;
+  font-family: 'Libre Baskerville', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #333;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: blanchedalmond;
+  padding: 0px 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.span-style {
+  margin-right: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-style {
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Libre Baskerville', serif;
+  color: darkolivegreen;
+}
+
+.selected {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  color: darkolivegreen;
+  background-color: blanchedalmond;
+}
+
+.notSelected {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border: solid blanchedalmond 3px;
+}
+
+.tabDisplay {
+  display: inline-block;
+  width: 375px;
+  height: 100px;
+  margin: 20px;
+  padding-top: 60px;
+  color: darkolivegreen;
+  background-color: blanchedalmond;
+  text-align: center;
 }
